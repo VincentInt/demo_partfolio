@@ -1,0 +1,66 @@
+.container {
+  z-index: 2;
+  margin-top: clamp(40px, 10vw, 100px);
+  padding: 0px clamp(20px, 22vw, 450px);
+  font-weight: 500;
+  .containerListAndProject {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    .moreIcon {
+      transform: rotate(90deg);
+      width: clamp(8px, 3vw, 25px);
+    }
+    .h4Text {
+      margin: 0;
+      font-size: clamp(8px, 2vw, 15px);
+      font-weight: 400;
+    }
+    .projectCard {
+      overflow: hidden;
+      height: clamp(80px, 20vw, 250px);
+      width: clamp(150px, 30vw, 500px);
+      margin-top: clamp(3px, 1vw, 10px);
+      border: 2px solid rgba(106, 106, 106, 0.468);
+      border-radius: clamp(3px, 4vw, 18px);
+      background-color: rgb(121, 121, 121);
+    }
+  }
+  .title {
+    display: block;
+    font-size: clamp(10px, 2vw, 28px);
+    font-weight: 600;
+  }
+  .pText {
+    font-size: clamp(9px, 2vw, 25px);
+    font-weight: 400;
+    .insText {
+      font-weight: 600;
+    }
+  }
+  .list {
+    font-weight: 500;
+    margin: clamp(3px, 1vw, 10px);
+    padding: 0px;
+    list-style: none;
+    .li {
+      display: flex;
+      align-items: center;
+      font-size: clamp(5px, 2vw, 17px);
+      padding: 2px 0px;
+      .imgList {
+        width: clamp(10px, 2.5vw, 20px);
+        margin-right: 5px;
+      }
+    }
+  }
+}
+@media (max-width: 1366px) {
+  .container {
+    padding: 0px clamp(20px, 8vw, 400px);
+    .projectCard {
+      height: clamp(80px, 25vw, 250px);
+      width: clamp(150px, 25vw, 550px);
+    }
+  }
+}

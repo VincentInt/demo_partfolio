@@ -1,0 +1,47 @@
+.containerNav {
+  position: fixed;
+  padding-top: 40px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition: all 0.3s;
+  transform: translateY(108px);
+  &:hover,
+  :focus {
+    .containerArrowIcon {
+      .arrowIcon {
+        transition: all 0.3s;
+        transform: rotate(90deg);
+      }
+    }
+    transform: translateY(0px);
+  }
+  .containerArrowIcon {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    .arrowIcon {
+      transition: all 0.3s;
+      transform: rotate(-90deg);
+    }
+  }
+  .nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 2px 50px;
+    backdrop-filter: blur(8px);
+    border-top: 1px solid rgba(255, 255, 255, 0.072);
+    .imgAvatar {
+      width: clamp(12px, 6.5vw, 45px);
+      margin-right: clamp(5px, 2vw, 15px);
+      border: 1px solid rgba(255, 255, 255, 0.253);
+      border-radius: 88px;
+    }
+    .containerBtn {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 450px;
+    }
+  }
+}
