@@ -5,7 +5,7 @@
   left: 0;
   bottom: 0;
   transition: all 0.3s;
-  transform: translateY(108px);
+  transform: translateY(85px);
   &:hover,
   :focus {
     .containerArrowIcon {
@@ -21,6 +21,7 @@
     justify-content: center;
     padding: 20px 0px;
     .arrowIcon {
+      width: clamp(15px, 2vw, 20px);
       transition: all 0.3s;
       transform: rotate(-90deg);
     }
