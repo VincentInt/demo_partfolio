@@ -39,15 +39,18 @@
     }
   }
   .list {
-    font-weight: 500;
     margin: clamp(3px, 1vw, 10px);
     padding: 0px;
     list-style: none;
     .li {
       display: flex;
       align-items: center;
-      font-size: clamp(12px, 2vw, 17px);
       padding: 2px 0px;
+      .pList{
+        margin: 0;
+        font-weight: 600;
+        font-size: clamp(16px, 2vw, 23px);
+      }
       .imgList {
         width: clamp(15px, 2.5vw, 20px);
         margin-right: 5px;

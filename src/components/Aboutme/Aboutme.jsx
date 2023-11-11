@@ -32,34 +32,40 @@ const Aboutme = () => {
           <ul className={style.list}>
             <li className={style.li}>
               <img className={style.imgList} src={htmlIcon} alt="html_icon" />
-              HTML
+              <p className={style.pList}>HTML</p>
             </li>
             <li className={style.li}>
               <img className={style.imgList} src={cssIcon} alt="css_icon" />
-              CSS
+              <p className={style.pList}> CSS</p>
             </li>
             <li className={style.li}>
               <img className={style.imgList} src={scssIcon} alt="scss_icon" />
-              SCSS/SASS
+              <p className={style.pList}>SCSS/SASS</p>
             </li>
             <li className={style.li}>
               <img className={style.imgList} src={jsIcon} alt="js_icon" />
-              JavaScript
+              <p className={style.pList}> JavaScript</p>
             </li>
             <li className={style.li}>
               <img className={style.imgList} src={viteIcon} alt="vite_icon" />
-              Vite
+              <p className={style.pList}>Vite</p>
             </li>
             <li className={style.li}>
               <img className={style.imgList} src={reactIcon} alt="react_icon" />
-              React
+              <p className={style.pList}> React</p>
             </li>
           </ul>
           <title className={style.title}>Personality</title>
           <ul className={style.list}>
-            <li className={style.li}>Responsible</li>
-            <li className={style.li}>Patient</li>
-            <li className={style.li}>Hardworking</li>
+            <li className={style.li}>
+              <p className={style.pList}> Responsible</p>
+            </li>
+            <li className={style.li}>
+              <p className={style.pList}>Patient</p>
+            </li>
+            <li className={style.li}>
+              <p className={style.pList}>Hardworking</p>
+            </li>
           </ul>
         </div>
         <div>
