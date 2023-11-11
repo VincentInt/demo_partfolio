@@ -17,34 +17,68 @@
       display: flex;
       justify-content: center;
       width: 100%;
-      margin-top: 300px;
+      margin-top: 180px;
+      margin-left: 100px;
       .gradient {
         z-index: -1;
       }
+      .gradient {
+        animation: gradientMove 8s ease-in-out infinite alternate;
+      }
       .gradient:nth-child(1) {
         position: absolute;
-        width: 811px;
-        height: 271px;
+        width: 911px;
+        height: 471px;
         transform: rotate(-15deg);
         border-radius: 811px;
-        background: linear-gradient(247deg, #00ff1a 19%, #ff6b00 56%, #dd400f 80%);
+        background: linear-gradient(257deg, #00ff1a 19%, #ff6b00 56%, #dd400f 80%);
         box-shadow: 122px 4px 4px 0px #0019ff, -44px -44px 122px 0px #c0f;
         filter: blur(200px);
       }
       .gradient:nth-child(2) {
         position: absolute;
         border-radius: 757px;
-        width: 757px;
-        height: 247px;
+        width: 957px;
+        height: 447px;
         transform: rotate(-15deg);
-        background: linear-gradient(
-          248deg,
-          rgba(11, 255, 182, 0.92) -6.5%,
-          rgba(0, 209, 238, 0.45) 20%,
-          #dd400f 75.5%
-        );
+        background: linear-gradient(188deg, #0bffb6eb -6.5%, #00d1ee73 20%, #dd400f 75.5%);
         filter: blur(165px);
       }
     }
+  }
+}
+@keyframes gradientMove {
+  0% {
+    transform: rotate(-15deg) scale(1) translate(0px, 0px);
+    opacity: 1;
+  }
+  25% {
+    transform: rotate(-30deg) scale(1.1) translate(-30px, 20px);
+    opacity: 0.8;
+  }
+  50% {
+    transform: rotate(15deg) scale(0.93) translate(30px, -20px);
+    opacity: 0.7;
+  }
+  75% {
+    transform: rotate(30deg) scale(1.05) translate(20px, 30px);
+    opacity: 0.8;
+  }
+  100% {
+    transform: rotate(-15deg) scale(1) translate(0px, 0px);
+    opacity: 1;
+  }
+}
+@media (max-width: 766px) {
+  .gradient:nth-child(1) {
+    width: 811px;
+    height: 271px;
+    transform: rotate(-15deg);
+    border-radius: 811px;
+  }
+  .gradient:nth-child(2) {
+    border-radius: 757px;
+    width: 757px;
+    height: 247px;
   }
 }
