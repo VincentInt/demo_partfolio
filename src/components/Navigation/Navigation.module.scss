@@ -1,13 +1,14 @@
 .containerNav {
   position: fixed;
-  padding-top: 40px;
+  padding-top: 20px;
   right: 0;
   left: 0;
   bottom: 0;
   transition: all 0.3s;
   transform: translateY(85px);
   &:hover,
-  :focus {
+  :focus,
+  :active {
     .containerArrowIcon {
       .arrowIcon {
         transition: all 0.3s;
