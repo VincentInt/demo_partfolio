@@ -23,7 +23,7 @@
         z-index: -1;
       }
       .gradient {
-        animation: gradientMove 8s ease-in-out infinite alternate;
+        animation: gradientMove 15s ease-in infinite alternate;
       }
       .gradient:nth-child(1) {
         position: absolute;
@@ -33,7 +33,7 @@
         border-radius: 811px;
         background: linear-gradient(257deg, #00ff1a 19%, #ff6b00 56%, #dd400f 80%);
         box-shadow: 122px 4px 4px 0px #0019ff, -44px -44px 122px 0px #c0f;
-        filter: blur(200px);
+        filter: blur(250px);
       }
       .gradient:nth-child(2) {
         position: absolute;
@@ -42,7 +42,7 @@
         height: 447px;
         transform: rotate(-15deg);
         background: linear-gradient(188deg, #0bffb6eb -6.5%, #00d1ee73 20%, #dd400f 75.5%);
-        filter: blur(165px);
+        filter: blur(189px);
       }
     }
   }
