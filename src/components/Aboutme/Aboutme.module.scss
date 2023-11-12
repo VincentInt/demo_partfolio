@@ -16,15 +16,6 @@
       font-size: clamp(12px, 2vw, 15px);
       font-weight: 400;
     }
-    .projectCard {
-      overflow: hidden;
-      height: clamp(120px, 20vw, 250px);
-      width: clamp(200px, 30vw, 500px);
-      margin-top: clamp(3px, 1vw, 10px);
-      border: 2px solid rgba(106, 106, 106, 0.468);
-      border-radius: clamp(3px, 4vw, 18px);
-      background-color: rgb(121, 121, 121);
-    }
   }
   .title {
     display: block;

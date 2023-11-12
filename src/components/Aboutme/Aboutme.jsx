@@ -7,11 +7,21 @@ import viteIcon from '../../assets/icons/vite_svg_icon.svg';
 import reactIcon from '../../assets/icons/react-svgrepo-com.svg';
 import Btn from '../UI/Btn/Btn';
 import moreIcon from '../../assets/icons/more-vertical-svgrepo-com.svg';
+import CardProject from '../UI/CardProject/CardProject';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from 'react';
+
 const Aboutme = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
   return (
-    <section className={style.container}>
+    <section data-aos="fade-down" className={style.container}>
       <div>
-        <title className={style.title}>About myself:</title>
+        <title data-aos="fade-down" className={style.title}>
+          About myself:
+        </title>
         <p className={style.pText}>
           Greetings! My name is <ins className={style.insText}>William Winchesta</ins>, I am a young
           developing Front-end developer from Russia. I spend a significant part of my time devoted
@@ -28,7 +38,9 @@ const Aboutme = () => {
       </div>
       <div className={style.containerListAndProject}>
         <div>
-          <title className={style.title}>Skills</title>
+          <title data-aos="fade-down" className={style.title}>
+            Skills
+          </title>
           <ul className={style.list}>
             <li className={style.li}>
               <img className={style.imgList} src={htmlIcon} alt="html_icon" />
@@ -55,7 +67,9 @@ const Aboutme = () => {
               <p className={style.pList}> React</p>
             </li>
           </ul>
-          <title className={style.title}>Personality</title>
+          <title data-aos="fade-down" className={style.title}>
+            Personality
+          </title>
           <ul className={style.list}>
             <li className={style.li}>
               <p className={style.pList}> Responsible</p>
@@ -69,8 +83,10 @@ const Aboutme = () => {
           </ul>
         </div>
         <div>
-          <title className={style.title}>List Project:</title>
-          <div className={style.projectCard}></div>
+          <title data-aos="fade-down" className={style.title}>
+            List Project:
+          </title>
+          <CardProject />
           <Btn>
             <img className={style.moreIcon} src={moreIcon} alt="icon_more" />
             <h4 className={style.h4Text}>More Project</h4>

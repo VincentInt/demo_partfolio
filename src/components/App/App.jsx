@@ -1,7 +1,7 @@
+import './App.css';
 import Aboutme from '../Aboutme/Aboutme.jsx';
 import Gradient from '../Gradient/Gradient.jsx';
 import Navigation from '../Navigation/Navigation.jsx';
-import './App.css';
 
 function App() {
   return (
