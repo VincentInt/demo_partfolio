@@ -10,11 +10,26 @@ import CardProject from '../UI/CardProject/CardProject';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-
+//
+import imgCard from '../../assets/img/cardImg/Component.png';
 const Aboutme = () => {
+  const lastProject = [
+    {
+      id: 1,
+      type: 'Technologies',
+      img: imgCard,
+      tools: ['REACT', 'SCSS', 'AOS'],
+      description: '        Lorem ipsum dolor, sit amet consectetur adipisi',
+      links: [
+        { path: 'github', link: '#' },
+        { path: 'page', link: '#' },
+      ],
+    },
+  ];
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
+
   return (
     <section data-aos="fade-down" className={style.container}>
       <div>
@@ -40,9 +55,19 @@ const Aboutme = () => {
           <title data-aos="fade-down" className={style.title}>
             Last Project:
           </title>
-          <CardProject
-            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, iure.'}
-          />
+          {/* Изменить позже */}
+          {lastProject.map((item) => {
+            return (
+              <CardProject
+                key={item.id}
+                tools={item.tools}
+                img={item.img}
+                description={item.description}
+                links={item.links}
+              />
+            );
+          })}
+
           <Btn>
             <ins>
               <h4 className={style.h4Text}>More Project</h4>

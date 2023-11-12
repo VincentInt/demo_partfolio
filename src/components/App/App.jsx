@@ -8,8 +8,8 @@ function App() {
   return (
     <main className="App">
       <Gradient />
-      <Project />
-      {/* <Aboutme /> */}
+      {/* <Project /> */}
+      <Aboutme />
       <Navigation />
     </main>
   );

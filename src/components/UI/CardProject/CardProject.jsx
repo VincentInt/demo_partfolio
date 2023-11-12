@@ -21,9 +21,9 @@ const CardProject = ({ img, description, links, tools }) => {
           <div className={style.github}>
             <p className={style.pText}>Link:</p>
             <div>
-              {links.map((item) => {
+              {links.map((item, index) => {
                 return (
-                  <a href={item.link}>
+                  <a key={index} href={item.link}>
                     <img className={style.iconLink} src={typeIcon(item.path)} alt="link_github" />
                   </a>
                 );
