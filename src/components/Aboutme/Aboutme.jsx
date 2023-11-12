@@ -6,7 +6,6 @@ import jsIcon from '../../assets/icons/javascript-fill-svgrepo-com.svg';
 import viteIcon from '../../assets/icons/vite_svg_icon.svg';
 import reactIcon from '../../assets/icons/react-svgrepo-com.svg';
 import Btn from '../UI/Btn/Btn';
-import moreIcon from '../../assets/icons/more-vertical-svgrepo-com.svg';
 import CardProject from '../UI/CardProject/CardProject';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -39,58 +38,65 @@ const Aboutme = () => {
       <div className={style.containerListAndProject}>
         <div>
           <title data-aos="fade-down" className={style.title}>
-            Skills
-          </title>
-          <ul className={style.list}>
-            <li className={style.li}>
-              <img className={style.imgList} src={htmlIcon} alt="html_icon" />
-              <p className={style.pList}>HTML</p>
-            </li>
-            <li className={style.li}>
-              <img className={style.imgList} src={cssIcon} alt="css_icon" />
-              <p className={style.pList}> CSS</p>
-            </li>
-            <li className={style.li}>
-              <img className={style.imgList} src={scssIcon} alt="scss_icon" />
-              <p className={style.pList}>SCSS/SASS</p>
-            </li>
-            <li className={style.li}>
-              <img className={style.imgList} src={jsIcon} alt="js_icon" />
-              <p className={style.pList}> JavaScript</p>
-            </li>
-            <li className={style.li}>
-              <img className={style.imgList} src={viteIcon} alt="vite_icon" />
-              <p className={style.pList}>Vite</p>
-            </li>
-            <li className={style.li}>
-              <img className={style.imgList} src={reactIcon} alt="react_icon" />
-              <p className={style.pList}> React</p>
-            </li>
-          </ul>
-          <title data-aos="fade-down" className={style.title}>
-            Personality
-          </title>
-          <ul className={style.list}>
-            <li className={style.li}>
-              <p className={style.pList}> Responsible</p>
-            </li>
-            <li className={style.li}>
-              <p className={style.pList}>Patient</p>
-            </li>
-            <li className={style.li}>
-              <p className={style.pList}>Hardworking</p>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <title data-aos="fade-down" className={style.title}>
             Last Project:
           </title>
-          <CardProject  description={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, iure."}/>
+          <CardProject
+            description={'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, iure.'}
+          />
           <Btn>
-            <img className={style.moreIcon} src={moreIcon} alt="icon_more" />
-            <h4 className={style.h4Text}>More Project</h4>
+            <ins>
+              <h4 className={style.h4Text}>More Project</h4>
+            </ins>
           </Btn>
+        </div>
+        <div className={style.skillContainer}>
+          <div>
+            <title data-aos="fade-down" className={style.title}>
+              Skills
+            </title>
+            <ul className={style.list}>
+              <li className={style.li}>
+                <img className={style.imgList} src={htmlIcon} alt="html_icon" />
+                <p className={style.pList}>HTML</p>
+              </li>
+              <li className={style.li}>
+                <img className={style.imgList} src={cssIcon} alt="css_icon" />
+                <p className={style.pList}> CSS</p>
+              </li>
+              <li className={style.li}>
+                <img className={style.imgList} src={scssIcon} alt="scss_icon" />
+                <p className={style.pList}>SCSS/SASS</p>
+              </li>
+              <li className={style.li}>
+                <img className={style.imgList} src={jsIcon} alt="js_icon" />
+                <p className={style.pList}> JavaScript</p>
+              </li>
+              <li className={style.li}>
+                <img className={style.imgList} src={viteIcon} alt="vite_icon" />
+                <p className={style.pList}>Vite</p>
+              </li>
+              <li className={style.li}>
+                <img className={style.imgList} src={reactIcon} alt="react_icon" />
+                <p className={style.pList}> React</p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <title data-aos="fade-down" className={style.title}>
+              Personality
+            </title>
+            <ul className={style.list}>
+              <li className={style.li}>
+                <p className={style.pList}>-Responsible</p>
+              </li>
+              <li className={style.li}>
+                <p className={style.pList}>-Patient</p>
+              </li>
+              <li className={style.li}>
+                <p className={style.pList}>-Hardworking</p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>

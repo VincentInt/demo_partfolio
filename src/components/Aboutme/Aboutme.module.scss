@@ -5,8 +5,8 @@
   font-weight: 500;
   .containerListAndProject {
     display: flex;
+    flex-direction: row-reverse;
     justify-content: space-between;
-    margin-right: 20px;
     .moreIcon {
       transform: rotate(90deg);
       width: clamp(10px, 3vw, 25px);
@@ -37,7 +37,7 @@
       display: flex;
       align-items: center;
       padding: 2px 0px;
-      .pList{
+      .pList {
         margin: 0;
         font-weight: 600;
         font-size: clamp(16px, 2vw, 23px);
@@ -55,6 +55,18 @@
     .projectCard {
       height: clamp(80px, 25vw, 250px);
       width: clamp(150px, 25vw, 550px);
+    }
+  }
+}
+@media (max-width: 500px) {
+  .container {
+    .containerListAndProject {
+      display: block;
+      .skillContainer{
+        max-width: 380px;
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

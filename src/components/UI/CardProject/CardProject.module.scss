@@ -57,3 +57,13 @@
     }
   }
 }
+
+@media (max-width: 500px) {
+  .containerCard {
+    height: clamp(200px, 20vw, 350px);
+    width: clamp(280px,80vw, 500px);
+    .background {
+      background-size: 440px;
+    }
+  }
+}
