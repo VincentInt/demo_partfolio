@@ -84,9 +84,9 @@ const Aboutme = () => {
         </div>
         <div>
           <title data-aos="fade-down" className={style.title}>
-            List Project:
+            Last Project:
           </title>
-          <CardProject />
+          <CardProject  description={"Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, iure."}/>
           <Btn>
             <img className={style.moreIcon} src={moreIcon} alt="icon_more" />
             <h4 className={style.h4Text}>More Project</h4>
