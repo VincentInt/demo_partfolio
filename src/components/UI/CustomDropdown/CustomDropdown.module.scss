@@ -1,0 +1,36 @@
+.customDropdown {
+  position: relative;
+  user-select: none;
+  font-size: 18px;
+  font-weight: 600;
+  .dropdownSelected {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 30px;
+    border-radius: 8px;
+    border: 2px solid #cccccc2f;
+    cursor: pointer;
+  }
+  .dropdownOptions {
+    position: absolute;
+    background-color: transparent; /* Прозрачный фон */
+    border-radius: 8px;
+
+    border: 2px solid #cccccc2f;
+    .dropdownOption {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 130px;
+      height: 30px;
+      cursor: pointer;
+      &:hover,
+      :focus {
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.158); /* Полупрозрачный для наведения */
+      }
+    }
+  }
+}

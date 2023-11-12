@@ -1,0 +1,27 @@
+.contrainerProject {
+  z-index: 2;
+  margin-top: clamp(40px, 10vw, 80px);
+  padding: 0px clamp(20px, 22vw, 350px);
+  font-weight: 500;
+  .containerProjects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .titleCotnainer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .selectContainer{
+      display: flex;
+      align-items: center;
+      .h2Text{
+        margin-right: 10px;
+      }
+    }
+  .title {
+    display: block;
+    font-size: clamp(20px, 2vw, 28px);
+    font-weight: 600;
+  }}
+}

@@ -3,6 +3,7 @@
   overflow: hidden;
   height: clamp(200px, 30vw, 350px);
   width: clamp(280px, 40vw, 500px);
+  margin: 15px;
   margin-top: clamp(3px, 1vw, 10px);
   border: 2px solid rgba(255, 255, 255, 0.116);
   border-radius: clamp(3px, 4vw, 18px);
@@ -27,24 +28,37 @@
   background-size: 550px;
 }
 .description {
-  transition: all 0.5s;
-  transform: translateY(100%);
+  display: flex;
   position: absolute;
   bottom: 0;
   padding: 8px 15px;
   background-color: rgba(0, 0, 0, 0.555);
   border-radius: 8px;
+   transition: all 0.5s;
+  transform: translateY(100%);
+  .containerTools{
+    display: flex;
+    flex-wrap: wrap;
+    .tools{
+      margin: 0px 5px 0px 0px;
+      padding: 5px 10px;
+      border-radius: 5px;
+      border: 2px solid rgba(70, 70, 70, 0.411);
+      background-color: rgba(0, 0, 0, 0.425);
+    }
+  }
   .github {
     display: flex;
     justify-content: space-between;
     align-items: center;
     .iconLink {
       padding-top: 5px;
-      width: 15px;
+      margin: 0px 5px;
+      width: 20px;
     }
   }
   .pText {
-    font-size: 15px;
+    font-size: clamp(15px, 5vw, 22px);
     margin: 2px;
   }
 }
@@ -61,7 +75,7 @@
 @media (max-width: 500px) {
   .containerCard {
     height: clamp(200px, 20vw, 350px);
-    width: clamp(280px,80vw, 500px);
+    width: clamp(280px, 80vw, 500px);
     .background {
       background-size: 440px;
     }
