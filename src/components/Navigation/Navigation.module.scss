@@ -1,6 +1,6 @@
 .containerNav {
   position: fixed;
-  padding-top:20px;
+  padding-top: 10px;
   right: 0;
   left: 0;
   bottom: 0;
@@ -25,7 +25,6 @@
       width: clamp(15px, 2vw, 20px);
       transition: all 0.3s;
       transform: rotate(-90deg);
-      margin: 20px;
     }
   }
   .nav {
