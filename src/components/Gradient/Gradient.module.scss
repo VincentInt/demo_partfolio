@@ -1,84 +1,25 @@
-.noises {
-  z-index: -1;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-image: url(/src/assets/img/noise.png);
-  opacity: 0.45;
-}
-.containerGradient {
-  z-index: -1;
-  height: 0vh;
-  .centerGradient {
-    display: flex;
-    justify-content: center;
-    .mainGradient {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      width: 100%;
-      margin-top: 180px;
-      margin-left: 100px;
-      .gradient {
-        z-index: -1;
-      }
-      .gradient {
-        animation: gradientMove 11s ease-in infinite alternate;
-      }
-      .gradient:nth-child(1) {
-        position: absolute;
-        width: 911px;
-        height: 471px;
-        transform: rotate(-15deg);
-        border-radius: 811px;
-        background: linear-gradient(257deg, #00ff1a 19%, #ff6b00 56%, #dd400f 80%);
-        box-shadow: 122px 4px 4px 0px #0019ff, -44px -44px 122px 0px #c0f;
-        filter: blur(250px);
-      }
-      .gradient:nth-child(2) {
-        position: absolute;
-        border-radius: 757px;
-        width: 957px;
-        height: 447px;
-        transform: rotate(-15deg);
-        background: linear-gradient(188deg, #0bffb6eb -6.5%, #00d1ee73 20%, #dd400f 75.5%);
-        filter: blur(189px);
-      }
-    }
-  }
-}
-@keyframes gradientMove {
+@keyframes gradientBackground {
   0% {
-    transform: rotate(-15deg) scale(1) translate(0px, 0px);
-    opacity: 1;
-  }
-  25% {
-    transform: rotate(-30deg) scale(1.1) translate(-30px, 20px);
-    opacity: 0.8;
+    background-position: 0% 50%;
   }
   50% {
-    transform: rotate(15deg) scale(0.93) translate(30px, -20px);
-    opacity: 0.7;
-  }
-  75% {
-    transform: rotate(30deg) scale(1.05) translate(20px, 30px);
-    opacity: 0.8;
+    background-position: 100% 50%;
   }
   100% {
-    transform: rotate(-15deg) scale(1) translate(0px, 0px);
-    opacity: 1;
+    background-position: 0% 50%;
   }
 }
-@media (max-width: 766px) {
-  .gradient:nth-child(1) {
-    width: 811px;
-    height: 271px;
-    transform: rotate(-15deg);
-    border-radius: 811px;
-  }
-  .gradient:nth-child(2) {
-    border-radius: 757px;
-    width: 757px;
-    height: 247px;
-  }
+
+.gradient{
+  background: rgb(1,0,43);
+background: linear-gradient(48deg, rgba(1,0,43,1) 0%, rgba(0,66,139,1) 24%, rgba(66,160,252,1) 42%, rgba(182,126,250,1) 65%, rgba(252,69,245,1) 100%);
+  filter: blur(164.3016815185547px);
+  background-size: 400% 400%;
+  animation: gradientBackground 15s ease infinite;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }

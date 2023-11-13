@@ -12,6 +12,7 @@ import 'aos/dist/aos.css';
 import { useEffect } from 'react';
 import { project } from '../data/projectData.json';
 import { Link } from 'react-router-dom';
+
 const Aboutme = () => {
   let lastProject = project[project.length - 1];
   useEffect(() => {
@@ -40,8 +41,15 @@ const Aboutme = () => {
       <div className={style.containerListAndProject}>
         <div>
           <title data-aos="fade-down" className={style.title}>
-            Last Project:
+            Last Project: 
           </title>
+          <Link className="Link" to="/demo_partfolio/projects">
+            <Btn>
+              <ins>
+                <h4 className={style.h4Text}>More Project</h4>
+              </ins>
+            </Btn>
+          </Link>
           {
             <CardProject
               key={lastProject.id}
@@ -51,13 +59,7 @@ const Aboutme = () => {
               links={lastProject.links}
             />
           }
-          <Link className='Link' to="/demo_partfolio/projects">
-            <Btn>
-              <ins>
-                <h4 className={style.h4Text}>More Project</h4>
-              </ins>
-            </Btn>
-          </Link>
+        
         </div>
         <div className={style.skillContainer}>
           <div>
