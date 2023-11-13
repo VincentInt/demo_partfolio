@@ -10,9 +10,16 @@
   }
 }
 
-.gradient{
-  background: rgb(1,0,43);
-background: linear-gradient(48deg, rgba(1,0,43,1) 0%, rgba(0,66,139,1) 24%, rgba(66,160,252,1) 42%, rgba(182,126,250,1) 65%, rgba(252,69,245,1) 100%);
+.gradient {
+  background: rgb(1, 0, 43);
+  background: linear-gradient(
+    48deg,
+    rgba(1, 0, 43, 1) 0%,
+    rgba(0, 66, 139, 1) 24%,
+    rgba(66, 160, 252, 1) 42%,
+    rgba(182, 126, 250, 1) 65%,
+    rgba(252, 69, 245, 1) 100%
+  );
   filter: blur(164.3016815185547px);
   background-size: 400% 400%;
   animation: gradientBackground 15s ease infinite;
