@@ -25,7 +25,7 @@
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 550px;
+  background-size: 750px;
 }
 .description {
   display: flex;
@@ -34,14 +34,15 @@
   padding: 8px 15px;
   background-color: rgba(0, 0, 0, 0.555);
   border-radius: 8px;
-   transition: all 0.5s;
+  transition: all 0.5s;
   transform: translateY(100%);
-  .containerTools{
+  .containerTools {
     display: flex;
     flex-wrap: wrap;
-    .tools{
+    .tools {
+      font-size: clamp(5px, 1.5vw, 10px);
       margin: 0px 5px 0px 0px;
-      padding: 5px 10px;
+      padding: 5px clamp(5px, 2vw, 10px);
       border-radius: 5px;
       border: 2px solid rgba(70, 70, 70, 0.411);
       background-color: rgba(0, 0, 0, 0.425);
@@ -53,12 +54,12 @@
     align-items: center;
     .iconLink {
       padding-top: 5px;
-      margin: 0px 5px;
-      width: 20px;
+      margin-left: 5px;
+      width: clamp(10px, 3vw, 20px);
     }
   }
   .pText {
-    font-size: clamp(15px, 5vw, 22px);
+    font-size: clamp(8px, 3vw, 22px);
     margin: 2px;
   }
 }
