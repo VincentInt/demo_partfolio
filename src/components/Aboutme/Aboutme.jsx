@@ -10,26 +10,13 @@ import CardProject from '../UI/CardProject/CardProject';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
-//
-import imgCard from '../../assets/img/cardImg/Component.png';
+import { project } from '../data/projectData.json';
+import { Link } from 'react-router-dom';
 const Aboutme = () => {
-  const lastProject = [
-    {
-      id: 1,
-      type: 'Technologies',
-      img: imgCard,
-      tools: ['REACT', 'SCSS', 'AOS'],
-      description: '        Lorem ipsum dolor, sit amet consectetur adipisi',
-      links: [
-        { path: 'github', link: '#' },
-        { path: 'page', link: '#' },
-      ],
-    },
-  ];
+  let lastProject = project[project.length - 1];
   useEffect(() => {
     Aos.init({ duration: 1500 });
   }, []);
-
   return (
     <section data-aos="fade-down" className={style.container}>
       <div>
@@ -55,24 +42,22 @@ const Aboutme = () => {
           <title data-aos="fade-down" className={style.title}>
             Last Project:
           </title>
-          {/* Изменить позже */}
-          {lastProject.map((item) => {
-            return (
-              <CardProject
-                key={item.id}
-                tools={item.tools}
-                img={item.img}
-                description={item.description}
-                links={item.links}
-              />
-            );
-          })}
-
-          <Btn>
-            <ins>
-              <h4 className={style.h4Text}>More Project</h4>
-            </ins>
-          </Btn>
+          {
+            <CardProject
+              key={lastProject.id}
+              tools={lastProject.tools}
+              img={lastProject.img}
+              description={lastProject.description}
+              links={lastProject.links}
+            />
+          }
+          <Link className='Link' to="/demo_partfolio/projects">
+            <Btn>
+              <ins>
+                <h4 className={style.h4Text}>More Project</h4>
+              </ins>
+            </Btn>
+          </Link>
         </div>
         <div className={style.skillContainer}>
           <div>

@@ -1,6 +1,6 @@
 import style from './Btn.module.scss';
 
-const Btn = ({ children }) => {
+const Btn = ({ children}) => {
   return <button className={style.btn}>{children}</button>;
 };
 

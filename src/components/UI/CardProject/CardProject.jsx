@@ -31,9 +31,9 @@ const CardProject = ({ img, description, links, tools }) => {
             </div>
           </div>
           <div className={style.containerTools}>
-              {tools.map((item)=>{
+              {tools.map((item, index)=>{
                 return (
-                  <h6 className={style.tools}>{item}</h6>
+                  <h6 key={index} className={style.tools}>{item}</h6>
                )
               })}
           </div>

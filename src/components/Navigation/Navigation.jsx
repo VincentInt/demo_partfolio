@@ -2,6 +2,7 @@ import Btn from '../UI/Btn/Btn';
 import style from './Navigation.module.scss';
 import iconUppArrow from '../../assets/icons/move-to-the-next-page-symbol-svgrepo-com.svg';
 import imgAvatar from '../../assets/img/image_2023-11-08_22-40-47.png';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -17,8 +18,10 @@ const Navigation = () => {
           </h4>
         </Btn>
         <div className={style.containerBtn}>
-          <Btn>About me</Btn>
-          <Btn>Projects</Btn>
+          <Link className='Link' to="/demo_partfolio/aboutme">
+            <Btn>About me</Btn>
+          </Link>
+          <Link className='Link' to="/demo_partfolio/projects"><Btn>Projects</Btn></Link>
           <Btn>Contacts</Btn>
         </div>
       </nav>

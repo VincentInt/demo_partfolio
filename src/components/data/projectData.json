@@ -1,0 +1,37 @@
+{
+  "project": [
+    {
+      "id": 1,
+      "type": "Technologies",
+      "img": "/public/imgProject/Component1.svg",
+      "tools": ["REACT", "SCSS", "AOS"],
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisi",
+      "links": [
+        { "path": "github", "link": "#" },
+        { "path": "page", "link": "#" }
+      ]
+    },
+    {
+      "id": 2,
+      "type": "Standart",
+      "img": "/public/imgProject/Component1.svg",
+      "tools": ["REACT", "SCSS"],
+      "description": "sdagpsdjgiodfhgipodpg;j",
+      "links": [
+        { "path": "github", "link": "#" },
+        { "path": "page", "link": "#" }
+      ]
+    },
+    {
+      "id": 3,
+      "type": "Technologies",
+      "img": "/public/imgProject/Component1.svg",
+      "tools": ["REACT", "SCSS"],
+      "description": "    Lorem ipsum dolor, sit amet consectetur adipis",
+      "links": [
+        { "path": "github", "link": "#" },
+        { "path": "page", "link": "#" }
+      ]
+    }
+  ]
+}
