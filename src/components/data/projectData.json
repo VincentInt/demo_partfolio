@@ -3,12 +3,12 @@
     {
       "id": 1,
       "type": "Technologies",
-      "img": "/public/imgProject/Component1.svg",
-      "tools": ["REACT", "SCSS", "AOS"],
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisi",
+      "img": "https://ibb.co/1Qk7JP4",
+      "tools": ["REACT", "SCSS", "JSX", "VITE"],
+      "description": "A simple tic-tac-toe project for a practical demonstration of the capabilities of the React application",
       "links": [
-        { "path": "github", "link": "#" },
-        { "path": "page", "link": "#" }
+        { "path": "github", "link": "https://github.com/VincentInt/tictac" },
+        { "path": "page", "link": "https://vincentint.github.io/tictac/" }
       ]
     },
     {
