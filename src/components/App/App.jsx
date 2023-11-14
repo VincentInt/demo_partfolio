@@ -10,9 +10,9 @@ function App() {
     <main className="App">
       <Gradient/>
       <Routes>
-        <Route path="/demo_partfolio/aboutme" element={<Aboutme />} />
-        <Route path="/demo_partfolio/projects" element={<Project />} />
-        <Route path="/demo_partfolio/" element={<Navigate to="/demo_partfolio/aboutme" replace />} />
+        <Route path="/winchesta_partfolio/aboutme" element={<Aboutme />} />
+        <Route path="/winchesta_partfolio/projects" element={<Project />} />
+        <Route path="/winchesta_partfolio/" element={<Navigate to="/winchesta_partfolio/aboutme" replace />} />
       </Routes>
       <Navigation />
     </main>

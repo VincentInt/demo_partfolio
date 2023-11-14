@@ -43,7 +43,7 @@ const Aboutme = () => {
           <title data-aos="fade-down" className={style.title}>
             Last Project: 
           </title>
-          <Link className="Link" to="/demo_partfolio/projects">
+          <Link className="Link" to="/winchesta_partfolio/projects">
             <Btn>
               <ins>
                 <h4 className={style.h4Text}>More Project</h4>

@@ -18,10 +18,10 @@ const Navigation = () => {
           </h4>
         </Btn>
         <div className={style.containerBtn}>
-          <Link className='Link' to="/demo_partfolio/aboutme">
+          <Link className='Link' to="/winchesta_partfolio/aboutme">
             <Btn>About me</Btn>
           </Link>
-          <Link className='Link' to="/demo_partfolio/projects"><Btn>Projects</Btn></Link>
+          <Link className='Link' to="/winchesta_partfolio/projects"><Btn>Projects</Btn></Link>
           <Btn>Contacts</Btn>
         </div>
       </nav>
