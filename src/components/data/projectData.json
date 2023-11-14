@@ -13,13 +13,13 @@
     },
     {
       "id": 2,
-      "type": "Standart",
-      "img": "/public/imgProject/Component1.svg",
-      "tools": ["REACT", "SCSS"],
-      "description": "sdagpsdjgiodfhgipodpg;j",
+      "type": "Technologies",
+      "img": "https://i.ibb.co/dfrzWqh/image.png",
+      "tools": ["REACT", "SCSS", "JSX", "VITE", "OpenWeatherMap", "JSON"],
+      "description": "The weather station app shows the current weather in Krasnodar using the free OpenWeatherMap API.",
       "links": [
-        { "path": "github", "link": "#" },
-        { "path": "page", "link": "#" }
+        { "path": "github", "link": "https://github.com/VincentInt/weather_station" },
+        { "path": "page", "link": "https://vincentint.github.io/weather_station/" }
       ]
     },
     {
