@@ -1,10 +1,13 @@
 import style from './Project.module.scss';
-import CardProject from '../UI/CardProject/CardProject';
-import CustomDropdown from '../UI/CustomDropdown/CustomDropdown';
+
+import CardProject from '../../UI/CardProject/CardProject';
+import CustomDropdown from '../../UI/CustomDropdown/CustomDropdown';
+
+import { useEffect, useState } from 'react';
+import { project } from '../../data/projectData.json';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
-import { useEffect, useState } from 'react';
-import { project } from '../data/projectData.json';
 
 const Project = () => {
   const options = ['Technologies', 'Standart'];

@@ -5,6 +5,21 @@ button {
 }
 .Link {
   text-decoration: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-size: clamp(9px, 2vw, 22px);
+  font-weight: 500;
+  border: none;
+  padding: clamp(5px , 5vw, 10px)  clamp(3px, 5vw,5px);
+  margin: 0;
+  background-color: transparent;
+  transition: text-shadow 0.3s;
+  
+}
+.Link:hover {
+  text-shadow: 0 0 5px #ffffff, 0 0 25px #ffffff, 0 0 50px #ffffff, 0 0 80px #ffffff;
 }
 body {
   height: 100vh;

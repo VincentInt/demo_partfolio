@@ -1,7 +1,8 @@
-import Btn from '../UI/Btn/Btn';
 import style from './Navigation.module.scss';
-import iconUppArrow from '../../assets/icons/move-to-the-next-page-symbol-svgrepo-com.svg';
-import imgAvatar from '../../assets/img/image_2023-11-08_22-40-47.png';
+
+import iconUppArrow from '../../../public/icons/move-to-the-next-page-symbol-svgrepo-com.svg';
+import imgAvatar from '../../../public/img/image_2023-11-08_22-40-47.png';
+
 import { Link } from 'react-router-dom';
 
 const Navigation = () => {
@@ -11,18 +12,21 @@ const Navigation = () => {
         <img src={iconUppArrow} alt="upp_arrow_icon" className={style.arrowIcon} />
       </div>
       <nav className={style.nav}>
-        <Btn>
+        <Link className="Link" to={"https://github.com/VincentInt"}>
           <img className={style.imgAvatar} src={imgAvatar} alt="avatar_logo" />{' '}
           <h4>
             <ins>VincentInt</ins>
           </h4>
-        </Btn>
+        </Link>
         <div className={style.containerBtn}>
-          <Link className='Link' to="/winchesta_partfolio/aboutme">
-            <Btn>About me</Btn>
+          <Link className="Link" to="/winchesta_partfolio/aboutme">
+            About me
           </Link>
-          <Link className='Link' to="/winchesta_partfolio/projects"><Btn>Projects</Btn></Link>
-          <Btn>Contacts</Btn>
+          <Link className="Link" to="/winchesta_partfolio/projects">
+            Projects
+          </Link>
+          {/* Добавить маршрут */}
+          <Link className="Link">Contacts</Link>
         </div>
       </nav>
     </div>

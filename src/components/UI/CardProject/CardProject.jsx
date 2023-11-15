@@ -1,9 +1,9 @@
 import style from './CardProject.module.scss';
-import iconGithub from '../../../assets/icons/github-142-svgrepo-com.svg';
-import iconPage from '../../../assets/icons/url-1423-svgrepo-com.svg';
+
+import iconGithub from '../../../../public/icons/github-142-svgrepo-com.svg';
+import iconPage from '../../../../public/icons/url-1423-svgrepo-com.svg';
 
 const CardProject = ({ img, description, links, tools }) => {
-  console.log(img);
   const typeIcon = (type) => {
     switch (type) {
       case 'github':

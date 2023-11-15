@@ -1,16 +1,20 @@
 import style from './Aboutme.module.scss';
-import htmlIcon from '../../assets/icons/html-124-svgrepo-com.svg';
-import cssIcon from '../../assets/icons/css3-02-svgrepo-com.svg';
-import scssIcon from '../../assets/icons/sass-svgrepo-com.svg';
-import jsIcon from '../../assets/icons/javascript-fill-svgrepo-com.svg';
-import viteIcon from '../../assets/icons/vite_svg_icon.svg';
-import reactIcon from '../../assets/icons/react-svgrepo-com.svg';
-import Btn from '../UI/Btn/Btn';
-import CardProject from '../UI/CardProject/CardProject';
+
+import htmlIcon from '../../../../public/icons/html-124-svgrepo-com.svg';
+import cssIcon from '../../../../public/icons/css3-02-svgrepo-com.svg';
+import scssIcon from '../../../../public/icons/sass-svgrepo-com.svg';
+import jsIcon from '../../../../public/icons/javascript-fill-svgrepo-com.svg';
+import viteIcon from '../../../../public/icons/vite_svg_icon.svg';
+import reactIcon from '../../../../public/icons/react-svgrepo-com.svg';
+
+import Btn from '../../UI/Btn/Btn';
+import CardProject from '../../UI/CardProject/CardProject';
+import { project } from '../../data/projectData.json';
+
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+
 import { useEffect } from 'react';
-import { project } from '../data/projectData.json';
 import { Link } from 'react-router-dom';
 
 const Aboutme = () => {
@@ -41,7 +45,7 @@ const Aboutme = () => {
       <div className={style.containerListAndProject}>
         <div>
           <title data-aos="fade-down" className={style.title}>
-            Last Project: 
+            Last Project:
           </title>
           <Link className="Link" to="/winchesta_partfolio/projects">
             <Btn>
@@ -59,7 +63,6 @@ const Aboutme = () => {
               links={lastProject.links}
             />
           }
-        
         </div>
         <div className={style.skillContainer}>
           <div>
