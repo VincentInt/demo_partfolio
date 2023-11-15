@@ -21,17 +21,6 @@
         { "path": "github", "link": "https://github.com/VincentInt/weather_station" },
         { "path": "page", "link": "https://vincentint.github.io/weather_station/" }
       ]
-    },
-    {
-      "id": 3,
-      "type": "Technologies",
-      "img": "/public/imgProject/Component1.svg",
-      "tools": ["REACT", "SCSS"],
-      "description": "    Lorem ipsum dolor, sit amet consectetur adipis",
-      "links": [
-        { "path": "github", "link": "#" },
-        { "path": "page", "link": "#" }
-      ]
     }
   ]
 }
