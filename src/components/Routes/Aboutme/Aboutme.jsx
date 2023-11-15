@@ -47,12 +47,10 @@ const Aboutme = () => {
           <title data-aos="fade-down" className={style.title}>
             Last Project:
           </title>
-          <Link className="Link" to="/winchesta_partfolio/projects">
-            <Btn>
+          <Link className="Link" to="/projects">
               <ins>
                 <h4 className={style.h4Text}>More Project</h4>
               </ins>
-            </Btn>
           </Link>
           {
             <CardProject

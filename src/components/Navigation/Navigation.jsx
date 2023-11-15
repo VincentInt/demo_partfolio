@@ -19,10 +19,10 @@ const Navigation = () => {
           </h4>
         </Link>
         <div className={style.containerBtn}>
-          <Link className="Link" to="/winchesta_partfolio/aboutme">
+          <Link className="Link" to="/aboutme">
             About me
           </Link>
-          <Link className="Link" to="/winchesta_partfolio/projects">
+          <Link className="Link" to="/projects">
             Projects
           </Link>
           {/* Добавить маршрут */}
