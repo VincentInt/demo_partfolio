@@ -6,7 +6,6 @@ import { Routes, Route, Navigate } from 'react-router-dom';
 const RoutesCont = () => {
   return (
     <>
- 
       <Routes>
         <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/projects" element={<Project />} />
@@ -15,7 +14,6 @@ const RoutesCont = () => {
           element={<Navigate to="/aboutme" />}
         /> 
       </Routes>
-  
     </>
   );
 };
