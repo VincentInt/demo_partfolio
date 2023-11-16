@@ -1,6 +1,9 @@
 @import-normalize;
 
-body{
+html {
+  padding-top: env(safe-area-inset-top);
+}
+body {
   margin: 0;
-  
+  margin-bottom: env(safe-area-inset-bottom);
 }

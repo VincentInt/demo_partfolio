@@ -9,10 +9,7 @@ const RoutesCont = () => {
       <Routes>
         <Route path="/aboutme" element={<Aboutme />} />
         <Route path="/projects" element={<Project />} />
-       <Route
-          path="/"
-          element={<Navigate to="/aboutme" />}
-        /> 
+        <Route path="/" element={<Navigate to="/aboutme" />} />
       </Routes>
     </>
   );
