@@ -21,6 +21,17 @@
         { "path": "github", "link": "https://github.com/VincentInt/weather_station" },
         { "path": "page", "link": "https://vincentint.github.io/weather_station/" }
       ]
+    },
+    {
+      "id": 3,
+      "type": "Technologies",
+      "img": "https://i.ibb.co/SdVh1Lc/image.png",
+      "tools": ["REACT", "SCSS", "JSX", "VITE", "JSON"],
+      "description": "Blog Post, this is a simple application. for publishing posts. It demonstrates the simple capabilities of React.",
+      "links": [
+        { "path": "github", "link": "https://github.com/VincentInt/blog_posts" },
+        { "path": "page", "link": "https://vincentint.github.io/blog_posts/" }
+      ]
     }
   ]
 }
